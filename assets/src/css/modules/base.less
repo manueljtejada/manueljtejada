@@ -1,0 +1,78 @@
+// Fixes issue with fixed navbar
+
+h5 {
+	text-transform: uppercase;
+	color: @gray-light;
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+}
+
+.jumbotron {
+	background: url("../img/bg.jpg") no-repeat left center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: @white;
+	text-align: center;
+	min-height: 500px;
+	margin: 0;
+	padding: 200px 0;
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+.navbar {
+	border: none;
+	letter-spacing: 0.125em;
+	
+	a {
+		text-transform: uppercase;
+	}
+
+	img {
+		width: 159px;
+		height: auto;
+	}
+}
+
+#portfolio {
+	background: @grayLighter;
+	padding: 50px 0;
+}
+
+#about {
+	padding: 50px 0;
+}
+
+footer {
+	background: @brand-primary;
+	color: @white;
+	padding: 50px 0;
+	text-align: center;
+
+	h5 {
+		color: @white;
+	}
+
+	.social {
+		margin-bottom: 30px;
+		li {
+			margin-right: 50px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				color: fade(@white, 85%);
+				transition: 0.4s;
+				&:hover {
+					color: @white;
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+}
